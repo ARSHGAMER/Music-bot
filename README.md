@@ -1,4 +1,5 @@
 This is Music Bot same Like Rythm with all Features of Rythm Bot and with Bass Boost. Scroll Down to Know How to Host it for Free on Heroku and Glitch
+[![Run on Repl.it](https://repl.it/badge/github/ARSHGAMER/Music-bot)](https://repl.it/github/ARSHGAMER/Music-bot)
 
 * Play Command
 
