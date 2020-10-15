@@ -7,7 +7,7 @@ client.commands = new Collection();//Making client.commands as a Discord.js Coll
 client.queue = new Map()
 
 client.config = {
-  prefix: process.env.PREFIX
+  prefix: "f!"
 }
 
 //Loading Events
@@ -34,4 +34,4 @@ fs.readdir("./commands/", (err, files) => {
 });
 
 //Logging in to discord
-client.login(process.env.TOKEN);
+client.login("NzY1OTAzNjE0MDE0OTE0NTcw.X4blUw._Hrazo_gDji4cMGa3vbF0XCD_7g");
