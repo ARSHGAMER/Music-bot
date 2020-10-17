@@ -42,5 +42,11 @@ fs.readdir("./commands/", (err, files) => {
   });
 });
 
+client.on('message', message => {
+  if (message.content === 'f!ping') {  
+    message.channel.send(`🏓Latency is ${Date.now() - message.createdTimestamp}ms. API Latency is ${Math.round(client.ws.ping)}ms`);
+  }
+});
+
 //Logging in to discord
 client.login("NzY1OTAzNjE0MDE0OTE0NTcw.X4blUw._Hrazo_gDji4cMGa3vbF0XCD_7g");
