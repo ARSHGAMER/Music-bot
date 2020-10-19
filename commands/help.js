@@ -39,5 +39,6 @@ Aliases: ${command.info.aliases.join(", ")}
 `)
             message.channel.send(commandinfo)
         }
+          message.react("😀")
     }
 }
