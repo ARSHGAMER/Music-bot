@@ -14,6 +14,7 @@ module.exports = {
     const serverQueue = message.client.queue.get(message.guild.id);
     if (!serverQueue)return sendError("There is nothing playing that I could skip for you.", message.channel);
     serverQueue.connection.dispatcher.end("Skiped the music");
-    message.react("✅")
+    if (!message.guild.me.hasPermission("EXTERNAL_EMOJIS")) return message.reply("I Dont Have External Emojis Permissions.");  
+    message.react("741902673858789396")
   },
 };
