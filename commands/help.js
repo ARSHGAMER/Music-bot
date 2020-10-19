@@ -39,7 +39,5 @@ Aliases: ${command.info.aliases.join(", ")}
 `)
             message.channel.send(commandinfo)
         }
- if (!message.guild.me.hasPermission("EXTERNAL_EMOJIS")) return message.reply("I Dont Have External Emojis Permissions.");  
-    message.react("751417490239651912");
     }
 }
