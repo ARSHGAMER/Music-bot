@@ -22,7 +22,5 @@ module.exports = {
       .addField("Requested by", song.req.tag, true)
       .setFooter(`Views: ${song.views} | ${song.ago}`)
     return message.channel.send(thing)
-     if (!message.guild.me.hasPermission("EXTERNAL_EMOJIS")) return message.reply("I Dont Have External Emojis Permissions.");  
-    message.react("741902673858789396")
   },
 };
