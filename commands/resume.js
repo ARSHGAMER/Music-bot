@@ -21,5 +21,6 @@ module.exports = {
       return message.channel.send(xd);
     }
     return sendError("There is nothing playing in this server.", message.channel);
+    message.react("😀")
   },
 };
