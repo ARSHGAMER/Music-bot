@@ -101,5 +101,7 @@ module.exports = {
       await channel.leave();
       return sendError(`I could not join the voice channel: ${error}`, message.channel);
     }
-  }
+    if(!message.guild.me.hasPermission("EXTERNAL_EMOJIS")) return message.reply("I Dont Have External Emojis Permissions.");  
+  message.react("751417490239651912")
+  },
 };
