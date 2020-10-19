@@ -16,7 +16,6 @@ module.exports = {
     if (!serverQueue)return sendError("There is nothing playing that I could stop for you.", message.channel);
     serverQueue.songs = [];
     serverQueue.connection.dispatcher.end("Stop the music");
-    if (!message.guild.me.hasPermission("EXTERNAL_EMOJIS")) return message.reply("I Dont Have External Emojis Permissions.");  
-    message.react("741902673858789396");
+    message.react("😀")
   },
 };
