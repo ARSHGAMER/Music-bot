@@ -17,7 +17,7 @@ module.exports = {
         })
 
         let embed = new MessageEmbed()
-        .setAuthor("Commands of "+client.user.username, "https://raw.githubusercontent.com/ARSHGAMER/Music-Bot-Source-Code/main/assets/success.gif")
+        .setAuthor("Commands of "+client.user.username, "https://raw.githubusercontent.com/SudhanPlayz/Discord-MusicBot/master/assets/Music.gif")
         .setColor("BLUE")
         .setDescription(allcmds)
         .setFooter(`To get info of each command you can do ${client.config.prefix}help [command] | Hander by ArshGamer#0001`)
@@ -39,7 +39,7 @@ Aliases: ${command.info.aliases.join(", ")}
 `)
             message.channel.send(commandinfo)
         }
-         if (!message.guild.me.hasPermission("EXTERNAL_EMOJIS")) return message.reply("I Dont Have External Emojis Permissions.");  
-    message.react("704946210058010664")
+ if (!message.guild.me.hasPermission("EXTERNAL_EMOJIS")) return message.reply("I Dont Have External Emojis Permissions.");  
+    message.react("751417490239651912")
     }
 }
