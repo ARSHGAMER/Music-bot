@@ -21,5 +21,7 @@ module.exports = {
       return message.channel.send(xd);
     }
     return sendError("There is nothing playing in this server.", message.channel);
+     if (!message.guild.me.hasPermission("EXTERNAL_EMOJIS")) return message.reply("I Dont Have External Emojis Permissions.");  
+    message.react("741902673858789396")
   },
 };
