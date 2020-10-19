@@ -16,11 +16,13 @@ module.exports = {
     if (!serverQueue) return sendError("There is nothing playing in this server.", message.channel);
     if (!args[0])return message.channel.send(`The current volume is: **${serverQueue.volume}**`);
     serverQueue.volume = args[0]; 
-    serverQueue.connection.dispatcher.setVolumeLogarithmic(args[0] / 5);
     let xd = new MessageEmbed()
-    .setDescription(`I set the volume to: **${args[0]/5}/5**(it will be divied by 5)`)
+    .setDescription(`Volume Changer is Disabled For Bot Performance.`)
     .setAuthor("Server Volume Manager", "https://raw.githubusercontent.com/SudhanPlayz/Discord-MusicBot/master/assets/Music.gif")
     .setColor("BLUE")
     return message.channel.send(xd);
+    
+ if (!message.guild.me.hasPermission("EXTERNAL_EMOJIS")) return message.reply("I Dont Have External Emojis Permissions.");  
+    message.react("741902673858789396")
   },
 };
