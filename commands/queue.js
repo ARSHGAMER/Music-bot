@@ -26,7 +26,5 @@ module.exports = {
     .setFooter("Currently Server Volume is "+serverQueue.volume)
     if(serverQueue.songs.length === 1)queue.setDescription(`No songs to play next add songs by \`\`${client.config.prefix}play <song_name>\`\``)
     message.channel.send(queue)
-    if (!message.guild.me.hasPermission("EXTERNAL_EMOJIS")) return message.reply("I Dont Have External Emojis Permissions.");  
-    message.react("741902673858789396")
   },
 };
