@@ -17,6 +17,6 @@ module.exports = {
     serverQueue.songs = [];
     serverQueue.connection.dispatcher.end("Stop the music");
     if (!message.guild.me.hasPermission("EXTERNAL_EMOJIS")) return message.reply("I Dont Have External Emojis Permissions.");  
-    message.react("741902673858789396")
+    message.react("741902673858789396");
   },
 };
