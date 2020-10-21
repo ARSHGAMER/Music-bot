@@ -52,4 +52,4 @@ client.on('message', message => {
 
 
 //Logging in to discord
-client.login("NzY1OTAzNjE0MDE0OTE0NTcw.X4blUw._Hrazo_gDji4cMGa3vbF0XCD_7g");
+client.login("");
